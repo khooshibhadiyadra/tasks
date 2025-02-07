@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function student(firstname,age,id){
+                this.fistname=firstname,
+                this.age=age,
+                this.id=id,
+                this.fulldetail=function(){
+                    return this.firstname +"age is"+this.age;
+                };
+            }
+            const demostudent=new student("xyz",12,123456);
+            document.getElementById('demo').innerHTML="the student details are"+student.fulldetail();
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <!-- //variables:
+// const:when value should not be channged
+// if not const than let is to be used
+// if not let and old browser then use var
+//var mainly for old browsers
+
+//array declared in const are changeable -->
+<p id="demo"></p>
+<script>
+    const fruits=["apple","mango","strawberry"];
+    fruits[0]="litchi";
+    fruits.push("orange");//litchi mango strawberry orange
+    fruits.pop();//litchi mango strawberry
+document.getElementById('demo').innerHTML=fruits;
+</script>
+    </body>
+</html>
