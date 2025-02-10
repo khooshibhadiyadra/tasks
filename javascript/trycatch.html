@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <p>enter number between 0 to 10</p>
+        <input type="text" id="demo">
+        <button type="submit" onclick="myfunction()">test</button>
+        <p id="d1"></p>
+        <script>
+            function myfunction(){
+                const msg=document.getElementById("d1");
+                msg.innerHTML="";
+                let x=document.getElementById("demo").value;
+                try{
+                    if(x.trim()=="")throw " is empty";
+                    if(isNaN(x))throw "it is not a number";
+                    x=Number(x);
+                    if(x>10) throw "it should be not more than 10";
+                    if(x<0) throw "it should be not less than 0";
+                }
+                catch(err){
+                    msg.innerHTML="input "+err;
+                }
+                finally{
+                    document.getElementById("demo").value="";
+                }
+
+            }
+
+        </script>
+    </body>
+</html>

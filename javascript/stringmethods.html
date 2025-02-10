@@ -1,0 +1,114 @@
+<html>
+
+<body>
+    <p id="demo"></p><br>
+    <p id="demo2"></p><br>
+    <p id="demo3"></p><br>
+    <p id="demo4"></p><br>
+    <p id="demo5"></p><br>
+    <p id="demo6"></p><br>
+    <p id="demo7"></p><br>
+    <p id="demo8"></p><br>
+    <p id="demo9"></p><br>
+    <p id="demo10"></p><br>
+    <p id="demo11"></p><br>
+    <p id="demo12"></p><br>
+    <p id="demo13"></p><br>
+    <p id="demo14"></p><br>
+    <p id="demo15"></p><br>
+    <p id="demo16"></p><br>
+    <p id="demo17"></p><br>
+    <p id="demo18"></p><br>
+    <p id="demo19"></p><br>
+    <p id="demo20"></p><br>
+    <p id="demo21"></p><br>
+    <p id="demo22"></p><br>
+    <p id="demo23"></p><br>
+    <p id="demo24"></p><br>
+    <p id="demo25"></p><br>
+    <p id="demo26"></p><br>
+    <p id="demo27"></p>
+    <script>
+        let text = "qwertyuiop";
+        document.getElementById("demo").innerHTML = text.length;
+        let text2 = "asdfghjkl";
+        document.getElementById("demo2").innerHTML = text2.charAt(5);
+        let text3 = "asdfghjkl";
+        document.getElementById("demo3").innerHTML = text3.charCodeAt(6);
+        const text4 = "zxcvbnm";
+        let letter = text4.at(4);
+        document.getElementById("demo4").innerHTML = letter;
+        let text5 = "apple,banana,orange";
+        //it does not include the destination index it slices till destination,index starts from 0
+        let slicetext = text5.slice(3, 7);
+        document.getElementById("demo5").innerHTML = slicetext;
+        //in substring index starts from 1
+        let str = "Apple, Banana, Kiwi";
+        document.getElementById("demo6").innerHTML = str.substring(7, 14);
+        //in substr the second argument specifies the length to be trimmed and here the length is full
+        let str2 = "apple, banana, kiwi";
+        document.getElementById("demo7").innerHTML = str2.substr(7, 5);
+        let str3 = "apple";
+        document.getElementById("demo8").innerHTML = str3.toUpperCase();
+        let str4 = "APPLE";
+        document.getElementById("demo9").innerHTML = str4.toLowerCase();
+        let t1 = "hello";
+        let t2 = "world";
+        let t3 = t1.concat(t2);
+        document.getElementById("demo10").innerHTML = t3;
+        let t4 = "              hello                ";
+        document.getElementById("demo11").innerHTML = t4;
+        let t5 = "                        helllo                   world";
+        document.getElementById("demo12").innerHTML = t5.trimStart();
+        let t6 = "hello            world                    ";
+        document.getElementById("demo13").innerHTML = t6.trimEnd();
+        let num = 5;
+        let totext = num.toString();
+        let padded = totext.padStart(5, "8");
+        document.getElementById("demo14").innerHTML = padded;
+        let num2 = 7;
+        let totext2 = num2.toString();
+        let padded2 = totext2.padEnd(7, "a");
+        document.getElementById("demo15").innerHTML = padded2;
+        let t7 = "hello khooshi";
+        let result = t7.repeat(5);
+        document.getElementById("demo16").innerHTML = result;
+        let t8 = "hello khooshi";
+        let result2 = t8.replace("khooshi", "student");
+        document.getElementById("demo17").innerHTML = result2;
+        //string to array through , space |
+        let t9 = "apple,mango,banana";
+        const a1 = t9.split(",");
+        document.getElementById("demo18").innerHTML = a1;
+        //string search:indexof,lastindexof,search,match,matchall,includes,strtswith
+        //indexof cant take regularexp
+        //search cant take second start position
+        let t10 = "hello there i am Khooshi";
+        let index = t10.indexOf('Khooshi');
+        document.getElementById("demo19").innerHTML = index;
+        let t11 = "hello ther i am khooshi";
+        let index2 = t11.lastIndexOf('khooshi');
+        document.getElementById("demo20").innerHTML = index2;
+        let t12 = "hello there i am khooshi";
+        let index3 = t12.search('khooshi');
+        document.getElementById("demo21").innerHTML = index3;
+        let t13 = "hello there i sm khooshiere";
+        let matchtext = t13.match("ere");
+        document.getElementById("demo22").innerHTML = matchtext;
+        let t14 = "hello there she is Khooshi. Khooshi is a student ";
+        const matchtext2 = t14.matchAll("Khooshi");
+        document.getElementById("demo23").innerHTML = Array.from(matchtext2);
+        let t15 = "hello there i am khooshi";
+        document.getElementById("demo24").innerHTML = t15.includes("ell");
+        let t16 = "hello there i am khooshi";
+        document.getElementById("demo25").innerHTML = t16.startsWith("hello");
+        let t17 = "hello there i am khooshi";
+        document.getElementById("demo26").innerHTML = t17.endsWith("khooshi");
+        //stringtemplate uses : ``
+        let t18 = `hello khooshi`;
+        // let t18="hello khooshi";
+        document.getElementById("demo27").innerHTML = t18;
+    </script>
+</body>
+
+</html>
