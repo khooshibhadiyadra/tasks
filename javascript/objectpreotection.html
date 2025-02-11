@@ -1,0 +1,31 @@
+<!-- preventextension.seal,issealed,freeze,isfrozen: -->
+ <html>
+    <body>
+        <p id="demo"></p>
+        <p id="d2"></p>
+        <p id="d3"></p>
+        <script>
+            "use strict";
+            const person={fname:"xyz",lname:"abc"};
+            Object.preventExtensions(person);
+            let text="";
+            try{
+                person.age=22;
+            }
+            catch(err){
+                text=err;
+
+            }
+            Object.seal();
+            Object.freeze();
+            delete person.age;
+            let answer=Object.isExtensible(person);
+            let a2=Object.isSealed(person);
+            let a3=Object.isFrozen(person);
+            document.getElementById("demo").innerHTML=text;
+            document.getElementById("d2").innerHTML=answer;
+            document.getElementById("d3").innerHTML=a3;
+
+        </script>
+    </body>
+ </html>

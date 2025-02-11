@@ -1,0 +1,49 @@
+<html>
+    <!-- object methods:create,assign,entries,fromentries,groupby,keys,values -->
+<!-- object entries used to display in key value pairs -->
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+
+        let text = Object.entries(person);
+        document.getElementById("demo").innerHTML = text;
+        //object values is similar to entries but returns single dimension of array
+        let text2 = Object.values(person);
+        document.getElementById("demo2").innerHTML = text2;
+
+        //groupby:groups elements to string using a callback function
+        const fruits = [
+            { name: "apple", quantity: "red" },
+            { name: "banana", color: "yellow" },
+            { name: "green apple", color: "green" }
+        ]
+        function myCallback({ quantity }) {
+            return quantity > 200 ? "ok" : "low";
+        }
+        const result = Object.groupBy(fruits, myCallback);
+        let text4 = "These fruits are Ok: <br>";
+        for (let [x, y] of result.ok.entries()) {
+            text += y.name + " " + y.quantity + "<br>";
+        }
+
+        text += "<br>These fruits are low: <br>";
+        for (let [x, y] of result.low.entries()) {
+            text += y.name + " " + y.quantity + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text4;
+
+    </script>
+</body>
+
+</html>
