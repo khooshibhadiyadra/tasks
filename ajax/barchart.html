@@ -1,0 +1,25 @@
+<html>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+const yArray = ["apple", "lemon", "orange", "melon", "cucumber"];
+const xArray = [50, 30, 65, 24, 16];
+
+const data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar",
+  orientation:"h",
+  marker: {color:"green"}
+}];
+
+const layout = {title:"fruitbarchart display"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+</body>
+</html>
