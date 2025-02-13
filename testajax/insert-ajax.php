@@ -7,7 +7,7 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 for ($i = 0; $i < count($nameArr); $i++) {
-if(($nameArr[$i] != "")){ /*not allowing empty values and the row which has been removed.*/
+if(($nameArr[$i] != "")){ 
 $sql="INSERT INTO user_data (Name, email)
 VALUES
 ('$nameArr[$i]','$emailArr[$i]')";
@@ -19,4 +19,3 @@ die('Error: ' . mysqli_error($con));
 }
 Print "Data added Successfully !";
 mysqli_close($con);
-?>
