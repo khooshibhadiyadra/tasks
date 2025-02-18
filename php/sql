@@ -1,0 +1,13 @@
+CREATE TABLE data (
+    id int AUTO_INCREMENT PRIMARY KEY,
+    first_name varchar(255),
+    last_name varchar(255),
+    email varchar(255),
+    password varchar(255),
+    confirm_password varchar(255),
+    gender ENUM('male','female'),
+    language varchar(255),
+    subject varchar(255),
+    profile_image VARCHAR(255)
+);
+        
