@@ -1,0 +1,9 @@
+CREATE TABLE customers (
+    customerid int,
+    companyname varchar(255),
+    contactname varchar(255),
+    address varchar(255),
+    city varchar(255),
+    postalcode int,
+    country varchar(255)
+);

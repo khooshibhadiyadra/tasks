@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+class Car {
+  constructor(name) {
+    this.name = name;
+  }
+  static hello(x) {
+    return "Hello " + x.name;
+  }
+}
+
+const carname = new Car("alto");
+document.getElementById("demo").innerHTML = Car.hello(carname);
+
+    </script>
+</html>

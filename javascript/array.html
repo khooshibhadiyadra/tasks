@@ -1,0 +1,156 @@
+<html>
+
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <p id="d5"></p>
+    <p id="d6"></p>
+    <p id="d7"></p>
+    <p id="d8"></p>
+    <p id="d9"></p>
+    <p id="d10"></p>
+    <p id="d11"></p>
+    <p id="d12"></p>
+    <p id="d13"></p>
+    <p id="d14"></p>
+    <p id="d15"></p>
+    <p id="d16"></p>
+    <p id="d17"></p>
+    <p id="d18"></p>
+    <p id="d19"></p>
+    <p id="d20"></p>
+    <p id="d21"></p>
+    <p id="d22"></p>
+    <p id="d23"></p>
+    <script>
+        const fruits = ["apple", "melon", "orange"];
+        fruits[fruits.length] = "lemon";
+        document.getElementById("d1").innerHTML = fruits;
+        const f2 = ["apple", "lemon", "grapes"];
+        let t1 = f2.length;
+        document.getElementById("d2").innerHTML = t1;
+        const f3 = ["apple", "lemon", "melon"];
+        let t2 = f3.at(1);
+        document.getElementById("d3").innerHTML = t2;
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("d4").innerHTML = fruits2;
+        fruits2.unshift("lemon");
+
+        const a1 = ['qwe', 'wer', 'ert'];
+        const a2 = ['asd', 'sdf'];
+        const combine = a1.concat(a2);
+        document.getElementById("d5").innerHTML = combine;
+
+        const a3 = ["qaz", "wsd", "edc"];
+        document.getElementById("d6").innerHTML = a3.copyWithin(1, 2);
+
+        const a4 = [[1, 2], [2, 3], [3, 4]];
+        const a5 = a4.flat();
+        document.getElementById("d7").innerHTML = a5;
+
+        //splice : add new item and slice slices out in piece
+        const a6 = ["apple", "kiwi", "melon"];
+        a6.splice(2, 1, "guvava", "lemon");
+        document.getElementById("d8").innerHTML = a6;
+
+        //tosplice is diffrent than splice because tosplice creates a new array while splice alters the old array
+        const season = ["winter", "summer", "monsoon"];
+        const newseason = season.toSpliced(0, 1);
+        document.getElementById("d9").innerHTML = newseason;
+        const num = [7, 5, 8, 96, 5, 6, 3, 4, 2, 1];
+        document.getElementById("d10").innerHTML = "index is" + num.findIndex(myfunction);
+        function myfunction(value, index, array) {
+            return value >= 8;
+        }
+
+        const college = ["vvn", "ss", "ld"];
+        document.getElementById("d11").innerHTML = college.sort();
+        document.getElementById("d12").innerHTML = college.reverse();
+
+        //tosorted and sorted are same but only diffrence that tosorted creates a new array
+        document.getElementById("d13").innerHTML = college.toSorted();
+
+        //similarly toreversed and reverse are same only diffrence is toreversed creates a new array
+        document.getElementById("d14").innerHTML = college.toReversed();
+
+        //compare
+        const points = [55, 74, 65, 22, 39, 45, 11, 12, 95];
+        points.sort(function (a, b) {
+            return a - b;//ascending
+            return b - a;//descending
+        });
+        document.getElementById("d15").innerHTML = points;
+
+        //random sorting
+        const p2 = [44, 55, 88, 11, 22, 12, 56];
+        document.getElementById("d16").innerHTML = p2;
+        function myfun() {
+            p2.sort(function () {
+                return 0.5 - Math.random()
+            });
+            document.getElementById("d16").innerHTML = p2;
+        }
+
+        //filter
+        const num2 = [55, 88, 556, 12, 96, 11, 47];
+        const over25 = num2.filter(myfun2);
+        document.getElementById("d17").innerHTML = over25;
+        function myfun2(value, index, array) {
+            return value > 25;
+
+        }
+
+        //reduce
+        const num3 = [55, 8, 9, 6, 5, 47, 22];
+        let sum = num3.reduce(myfun3);
+        document.getElementById("d18").innerHTML = "sum is" + sum;
+        function myfun3(total, value, index, array) {
+            return total + value;
+        }
+
+        //every:if every passes then only true
+        const num4 = [55, 8, 9, 6, 5, 47, 22];
+        let overnum = num4.every(myfun4);
+        document.getElementById("d19").innerHTML = overnum;
+        function myfun4(total, value, index, array) {
+            return value > 8;
+        }
+
+        //some:if some passes the test
+        const num5 = [55, 8, 9, 6, 5, 47, 22];
+        let oversome = num5.some(myfun5);
+        document.getElementById("d20").innerHTML = oversome;
+        function myfun5(value, index, array) {
+            return value > 25;
+        }
+
+        //from
+        const num6 = ["ABCDEFGHIJ"];
+        document.getElementById("d21").innerHTML = num6;
+
+        //arraykeys
+        const colors=["yellow","blue","red"];
+        const keys=colors.keys();
+        let text="";
+        for(let x of keys){
+            text=text+x;
+      }
+      document.getElementById("d22").innerHTML=text;
+
+      //entries
+      const color=["red","green","blue"];
+      const f=color.entries();
+     for(let x of f){
+        document.getElementById("d23").innerHTML += x+"<br>";
+     }
+
+
+
+
+    </script>
+</body>
+
+</html>

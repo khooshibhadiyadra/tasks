@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <input type="button" value="set" onclick="setCookie()">
+        <input type="button" value="get" onclick="getCookie()">
+        <script>
+            function setCookie(){
+                document.cookie="name=xyz";
+            }
+            function getCookie(){
+                if(document.cookie.length!=0){
+                    var arr=document.cookie.split(" ");
+                    alert("name"+arr[0]+""+"value "+arr[1]);
+                }
+                else{
+                    alert("cookie not available");
+                }
+            }
+
+        </script>
+    </body>
+</html>

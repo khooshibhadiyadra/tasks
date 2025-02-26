@@ -1,0 +1,503 @@
+
+<!-- saved from url=(0052)http://127.0.0.1:5500/phpstart/adminlte/sidebar.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+    <style>
+        body{
+            .app-sidebar bg-body-secondary{
+                background-color: grey;
+            }
+            #maindiv{
+                background-color: rgb(27, 26, 26);
+                width: 253px;
+                text-decoration: none;
+
+            }
+            .nav-item{
+                text-decoration: none;
+            }
+            .nav-link{
+                text-decoration: none;
+              
+            }
+            p.text{
+              color: rgba(187, 170, 170, 0.795);
+              text-decoration: bold;
+            }
+            .brand-link{
+                color: rgba(187, 170, 170, 0.795);
+                text-decoration: none;
+            }
+        }
+    </style>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark" id="maindiv">
+    <div class="sidebar-brand">
+      <a href="http://127.0.0.1:5500/phpstart/index.html" class="brand-link">
+        <img src="./sidebar_files/AdminLTEFullLogo.png" alt="" class="brand-image opacity-75 shadow">
+
+        <span class="brand-text fw-light"></span>
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <nav class="mt-2">
+        
+        <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-speedometer"></i>
+              <p class="text">
+                Dashboard
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/index.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Dashboard v1</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/index2.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Dashboard v2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/index3.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Dashboard v3</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/generate/theme.html" class="nav-link">
+              <i class="nav-icon bi bi-palette"></i>
+              <p class="text">Theme Generate</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-box-seam-fill"></i>
+              <p class="text">
+                Widgets
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/widgets/small-box.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Small Box</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/widgets/info-box.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">info Box</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/widgets/cards.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Cards</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-clipboard-fill"></i>
+              <p class="text">
+                Layout Options
+                <span class="nav-badge badge text-bg-secondary me-3">6</span>
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/layout/unfixed-sidebar.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Default Sidebar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/layout/fixed-sidebar.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Fixed Sidebar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/layout/layout-custom-area.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Layout <small>+ Custom Area </small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/layout/sidebar-mini.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Sidebar Mini</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/layout/collapsed-sidebar.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Sidebar Mini <small>+ Collapsed</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/layout/logo-switch.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Sidebar Mini <small>+ Logo Switch</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/layout/layout-rtl.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Layout RTL</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link active">
+              <i class="nav-icon bi bi-tree-fill"></i>
+              <p class="text">
+                UI Elements
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/UI/general.html" class="nav-link active">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">General</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/UI/icons.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Icons</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/UI/timeline.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Timeline</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-pencil-square"></i>
+              <p class="text">
+                Forms
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/forms/general.html" class="nav-link active">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">General Elements</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-table"></i>
+              <p class="text">
+                Tables
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/tables/simple.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Simple Tables</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-box-arrow-in-right"></i>
+              <p class="text">
+                Auth
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+                  <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                  <p class="text">
+                    Version 1
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="http://127.0.0.1:5500/phpstart/examples/login.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p class="text">Login</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="http://127.0.0.1:5500/phpstart/examples/register.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p class="text">Register</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+                  <i class="nav-icon bi bi-box-arrow-in-right"></i>
+                  <p class="text">
+                    Version 2
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="http://127.0.0.1:5500/phpstart/examples/login-v2.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p class="text">Login</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="http://127.0.0.1:5500/phpstart/examples/register-v2.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p class="text">Register</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/examples/lockscreen.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Lockscreen</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">DOCUMENTATIONS</li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/docs/introduction.html" class="nav-link">
+              <i class="nav-icon bi bi-download"></i>
+              <p class="text">Installation</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/docs/layout.html" class="nav-link">
+              <i class="nav-icon bi bi-grip-horizontal"></i>
+              <p class="text">Layout</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/docs/color-mode.html" class="nav-link">
+              <i class="nav-icon bi bi-star-half"></i>
+              <p class="text">Color Mode</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-ui-checks-grid"></i>
+              <p class="text">
+                Components
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/docs/components/main-header.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Main Header</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/docs/components/main-sidebar.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Main Sidebar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-filetype-js"></i>
+              <p class="text">
+                Javascript
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/docs/javascript/treeview.html" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Treeview</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/docs/browser-support.html" class="nav-link">
+              <i class="nav-icon bi bi-browser-edge"></i>
+              <p class="text">Browser Support</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/docs/how-to-contribute.html" class="nav-link">
+              <i class="nav-icon bi bi-hand-thumbs-up-fill"></i>
+              <p class="text">How To Contribute</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/docs/faq.html" class="nav-link">
+              <i class="nav-icon bi bi-question-circle-fill"></i>
+              <p class="text">FAQ</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/docs/license.html" class="nav-link">
+              <i class="nav-icon bi bi-patch-check-fill"></i>
+              <p class="text">License</p>
+            </a>
+          </li>
+          <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-circle-fill"></i>
+              <p class="text">Level 1</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-circle-fill"></i>
+              <p class="text">
+                Level 1
+                <i class="nav-arrow bi bi-chevron-right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Level 2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">
+                    Level 2
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+                      <i class="nav-icon bi bi-record-circle-fill"></i>
+                      <p class="text">Level 3</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+                      <i class="nav-icon bi bi-record-circle-fill"></i>
+                      <p class="text">Level 3</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+                      <i class="nav-icon bi bi-record-circle-fill"></i>
+                      <p class="text">Level 3</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+                  <i class="nav-icon bi bi-circle"></i>
+                  <p class="text">Level 2</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-circle-fill"></i>
+              <p class="text">Level 1</p>
+            </a>
+          </li>
+          <li class="nav-header">LABELS</li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-circle text-danger"></i>
+              <p class="text">Important</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-circle text-warning"></i>
+              <p class="text">Warning</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/phpstart/adminlte/sidebar.html#" class="nav-link">
+              <i class="nav-icon bi bi-circle text-info"></i>
+              <p class="text">Informational</p>
+            </a>
+          </li>
+        </ul>
+        <!--end::Sidebar Menu-->
+      </nav>
+    </div>
+    <!--end::Sidebar Wrapper-->
+  </aside>
+  
+  </body></html>
